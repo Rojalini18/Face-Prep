@@ -1,0 +1,131 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+.main {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 4000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.scroll {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.scroll input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+.scroll input:focus {
+  border: 1px solid #333;
+}
+.scroll button {
+  width: 100%;
+  padding: 16.5px 14px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  color: #ffffff;
+}
+.scrollHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+.scrollHeader input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+button {
+  padding: 16.5px 14px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: black;
+  color: #ffffff;
+  cursor: pointer;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  width: 100%;
+  margin-top: 20px;
+  row-gap: 20px;
+}
+.scrollflow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(214, 154, 143);
+}
+.scrollflowName {
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+}
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 80%;
+}
+.scrollflow:hover {
+  background: rgb(190, 227, 227);
+  color: black;
+}
+.scrollflowEmail,
+.scrollflownamego,
+.scrollflowPhone,
+.age,
+.gender,
+.scrollflowCountry {
+  font-weight: bold;
+}
+@media screen and (min-width: 570px) and (max-width: 1080px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1102px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 570px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 745px) {
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

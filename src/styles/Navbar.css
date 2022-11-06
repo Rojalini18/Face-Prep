@@ -1,0 +1,53 @@
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  width: 100vw;
+  align-items: center;
+  position: sticky;
+  top: 0.2%;
+  z-index: 100;
+  background-color: #ffffff !important;
+  height: 7vh;
+  box-shadow: 2px 2px 12px -1px lightgrey;
+}
+
+.nav img {
+  height: 50%;
+  position: relative;
+  right: 37%;
+}
+
+.logout-btn {
+  background-color: #ea7763;
+  border: none;
+  height: 40px;
+  margin-right: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  min-width: 100px;
+  cursor: pointer;
+  font-family: system-ui;
+  font-weight: 500;
+  font-size: larger;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 745){
+  .nav img {
+    height: 50%;
+    margin-left: -2px;
+  }
+  .logout-btn {
+    background-color: #ea7763;
+    border: none;
+    height: 80%;
+    margin-right: 2px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    font-family: system-ui;
+    font-weight: 500;
+    font-size: x-large;
+    text-transform: capitalize;
+  }
+}
